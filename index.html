@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shidiq Bookshelf</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="head_bar">
+  <h1 class="head_bar__title">Shidiq Bookshelf</h1>
+  <p class="head_bar__desc">Sebuah aplikasi web sederhana untuk inventaris buku</p>
+</header>
+<main>
+  <section class="input_section">
+    <div class="judul_kotak">
+      <h2>Masukkan Buku Baru</h2>
+    </div>
+    <div class="isi_kotak">
+      <form id="inputBook">
+        <div class="input">
+          <label for="inputBookTitle">Judul</label>
+          <input id="inputBookTitle" type="text" required>
+        </div>
+        <div class="input">
+          <label for="inputBookAuthor">Penulis</label>
+          <input id="inputBookAuthor" type="text" required>
+        </div>
+        <div class="input">
+          <label for="inputBookYear">Tahun</label>
+          <input id="inputBookYear" type="number" required>
+        </div>
+        <div class="input_inline">
+          <input id="inputBookIsComplete" type="checkbox">
+          <label for="inputBookIsComplete">Selesai dibaca</label>
+        </div>
+        <button id="bookSubmit" type="submit">Kirim</button>
+      </form>
+    </div>
+  </section>
+  <section class="search_section">
+    <div class="judul_kotak">
+      <h2>Cari Buku</h2>
+    </div>
+    <div class="isi_kotak">
+      <p>Kata Kunci</p>
+      <form id="searchBook">
+        <input id="searchBookTitle" type="text">
+        <button id="searchSubmit" type="submit">Cari</button>
+      </form>
+    </div>
+  </section>
+  <section class="book_shelf">
+    <div class="judul_kotak">
+      <h2>Belum selesai dibaca</h2>
+    </div>
+    <div class="isi_kotak">
+      <div id="incompleteBookshelfList" class="book_list">
+      </div>
+    </div>
+  </section>
+  <section class="book_shelf">
+    <div class="judul_kotak">
+      <h2>Selesai dibaca</h2>
+    </div>
+    <div class="isi_kotak">
+      <div id="completeBookshelfList" class="book_list">
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <h3>Created by <a href="https://shidiq.blog" target="_blank" >Shidiq.Blog</a></h3>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+input,
+button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #5B0888;
+    color: white;
+}
+
+main {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+section {
+    width: 45vw;
+    border-radius: 20px;
+    background: linear-gradient(100deg, #AF37F9 -2.21%, #5B0888 104.82%);
+}
+
+.judul_kotak {
+    background-color: #8946E8;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.isi_kotak {
+    margin: 20px;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.judul_kotak h2 {
+    text-align: center;
+    color: white;
+}
+
+.input_section .isi_kotak form .input {
+    margin: 10px 0;
+}
+
+.input_section .isi_kotak form button {
+    background-color: #8946E8;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    float: right;
+    display: block;
+    width: 30%;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.input_section .isi_kotak form .input input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 15px;
+    margin-top: 10px;
+    border: #8946E8;
+    background-color: #E5CFF7;
+}
+
+.input_section .isi_kotak form .input label {
+    color: white;
+    font-weight: bold;
+}
+
+.input_section .isi_kotak form .input_inline {
+    margin: 12px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.input_section .isi_kotak form .input_inline label {
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search_section form {
+    display: grid;
+    grid-template-columns: auto 0.2fr 0fr;
+    grid-gap: 10px;
+}
+
+.search_section form label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section p {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+
+.search_section form input {
+    padding: 8px;
+    background-color: #E5CFF7;
+    border: #E5CFF7;
+    border-radius: 20px;
+}
+
+.search_section form button {
+    background-color: #8946E8;
+    font-weight: bold;
+    color: white;
+    border: #E5CFF7;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background-color: #5B0888;
+    padding: 20px;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .head_bar {
+        padding: 20px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    .input_section .isi_kotak form button {
+        width: 50%;
+    }
+
+    .search_section form {
+        grid-template-columns: auto 1fr;
+    }
+
+    .search_section p {
+        margin-top: 20px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .head_bar {
+        padding: 25px;
+    }
+
+    main {
+        padding: 25px;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    .search_section form input {
+        width: 100%;
+    }
+
+    .search_section form button {
+        width: 20vw;
+    }
+}
